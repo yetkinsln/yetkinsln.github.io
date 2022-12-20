@@ -1,0 +1,238 @@
+*{
+    margin: 0px;
+
+}
+.contain{
+
+}
+
+.card1 img{
+  height: 15vh;
+}
+.sec1{
+background-position: center;
+}
+.sec2{
+  height: 100vh;
+background: black;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute; 
+      padding-bottom: 2vh;
+      padding-top: 2vh;
+      animation-name: navbtmm;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-timing-function: ease-in-out;
+  position: fixed;
+  z-index: 1;
+}
+@keyframes navbtmm{
+    from {
+        border-color: #6666ff;
+      }
+      10% {
+        border-color: #0099ff;
+      }
+      50% {
+        border-color: #00ff00;
+      }
+      75% {
+        border-color: #ff3399;
+      }
+      100% {
+        border-color: #6666ff;
+      }
+}
+.nav h6{
+  margin-right: 2vh;
+  color: white;
+    font-style: italic;
+    font-size: 3vh;
+    margin-left: 20vh;
+    text-shadow: 0px 0px 0.5vh white;
+    transition: 2s;
+    animation-name: hdranimation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+.nav h4{
+    color: white;
+    font-style: italic;
+    font-size: 4vh;
+    margin-left: 12vh;
+    text-shadow: 0px 0px 0.4vh white;
+    transition: 2s;
+    animation-name: hdranimation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+h1{
+    animation-name: hdranimation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out; 
+}
+@keyframes hdranimation{
+    from {
+        color: #6666ff;
+        text-shadow: 0px 0px 5px black;
+        border-color: #6666ff;
+      }
+      10% {
+        color: #0099ff;
+        text-shadow: 0px 0px 5px black;
+        border-color: #0099ff;
+      }
+      50% {
+        color: #00ff00;
+        text-shadow: 0px 0px 5px black;
+        border-color: #00ff00;
+      }
+      75% {
+        color: #ff3399;
+        text-shadow: 0px 0px 5px black;
+        border-color: #ff3399;
+      }
+      100% {
+        color: #6666ff;
+        text-shadow: 0px 0px 5px black;
+        border-color: #6666ff;
+      }
+}
+
+.nav li{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav a{
+    transition: 2s;
+    text-decoration: none;
+    color: white;
+    text-shadow: 0px 0px 3px black;
+    padding: 2vh;
+    border: 0.3vh solid white;
+    margin-right: 0.6vh;
+    transition: 5s;
+    animation-name: hdranimation, rainbowBorder;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+
+}
+a:hover{
+    transition: 2s;
+    animation-name: btnanimation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    content: "yetkinaslan7@gmail.com";
+
+}
+@keyframes btnanimation{
+    from{
+        box-shadow: 0px 0px 2px white;
+        background-color: white;
+        color:black;
+        border-color: black;
+    }
+    to{
+       box-shadow: 0px 0px 100px white;
+       background-color: black;
+       color: white;
+       border-color: white;
+    }
+}
+
+.cards{
+  padding: 12vh;
+  width: 50%;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+}
+@keyframes rainbowBorder {
+  0% {
+    border-color: red;
+  }
+  16.6% {
+    border-color: orange;
+  }
+  33.2% {
+    border-color: yellow;
+  }
+  49.8% {
+    border-color: green;
+  }
+  66.4% {
+    border-color: blue;
+  }
+  83% {
+    border-color: indigo;
+  }
+  100% {
+    border-color: violet;
+  }
+}
+
+.card1{
+border: 2px solid;
+height: 60vh;
+display: flex;
+justify-content:space-between;
+align-items: center;
+flex-direction: column;
+background-color: transparent;
+background-blend-mode: multiply;
+margin:1vh;
+transition: 2s;
+animation-name: rainbowBorder, hdranimation;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-timing-function: ease-in-out;
+text-align: center;
+}
+
+
+.card1 a{
+  padding: 1.5vh 4vh;
+  background-color: transparent;
+  border: 0.3vh solid white;
+  position: relative;
+  top: 3vh;
+  color: white;
+  background-color: black;
+  transition: 2s;
+  animation-name: hdranimation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+.card1 a:hover{
+  transition: 2s;
+  animation-name: btnanimation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
